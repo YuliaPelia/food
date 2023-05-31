@@ -1,18 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header>
-      <a href="#"><img src="./icons/logo.svg.png" alt="logo" /></a>
-      <nav>
-        <a href="#"> Доставка харчування</a><a href="#">Другий пункт</a>
-      </nav>
-      <button>Зв'язатися з нами</button>
+    <header class="header">
+      <div class="header_left-block">
+        <a class="header_logo" href="#"
+          ><img src="./icons/logo.svg" alt="logo"
+        /></a>
+        <nav class="header_nav">
+          <a href="#"> Доставка харчування</a><a href="#">Другий пункт</a>
+        </nav>
+      </div>
+      <button class="header_btn">Зв'язатися з нами</button>
     </header>
+    <main>
+      <section class="preview">
+        <div class="bg_blue"></div>
+        <div class="container">
+          <div class="preview_tab-content">
+            <div class="preview_tab">
+              <img src="./img/tabs/vegy.jpg" alt="vegy foot" />
+              <div class="preview_tab-descr">
+                <p>
+                  Меню "Фітнес" – це новий підхід до приготування страв: більше
+                  свіжих овочів та фруктів. Для людей, які цікавляться спортом;
+                  активних та здорових. Це абсолютно новий продукт з оптимальною
+                  ціною та високою якістю!
+                </p>
+              </div>
+            </div>
+            <div class="preview_tab hide">
+              <img src="./img/tabs/elite.jpg" alt="elite foot" />
+              <div class="preview_tab-descr">
+                <p>
+                  Меню “Преміум” - ми використовуємо не лише гарний дизайн
+                  упаковки, але й якісне виконання страв. Червона риба,
+                  морепродукти, фрукти – ресторанне меню без походу до
+                  ресторану!
+                </p>
+              </div>
+            </div>
+            <div class="preview_tab hide">
+              <img src="./img/tabs/post.jpg" alt="post foot" />
+              <div class="preview_tab-descr">
+                <p>
+                  Наше спеціальне "Пісне меню" - це ретельний вибір
+                  інгредієнтів: повна відсутність продуктів тваринного
+                  походження. Повна гармонія з собою та природою в кожному
+                  елементі! Все буде Ом!
+                </p>
+              </div>
+            </div>
+            <div class="preview_tab hide">
+              <img src="./img/tabs/post.jpg" alt="post foot" />
+              <div class="preview_tab-descr">
+                <p>
+                  Меню "Збалансоване" - це відповідність вашого раціону всім
+                  наукових рекомендацій. Ми ретельно прораховуємо вашу потреба в
+                  к/б/ж/в і створюємо найкращі страви для вас.
+                </p>
+              </div>
+            </div>
+            <div class="preview_tab-header">
+              <h3>Виберіть стиль харчування</h3>
+              <ul class="preview_tab-header_list">
+                <li
+                  class="preview_tab-header-item preview_tab-header-item_active"
+                >
+                  Фітнес
+                </li>
+                <li class="preview_tab-header-item">Преміум</li>
+                <li class="preview_tab-header-item">Пісне</li>
+                <li class="preview_tab-header-item">Збалансоване</li>
+              </ul>
+            </div>
+          </div>
+          <h3>Живи повним життям!</h3>
+        </div>
+      </section>
+      <hr />
+    </main>
   </body>
 </html>

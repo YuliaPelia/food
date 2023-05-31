@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+.bg_blue {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 900px;
+  z-index: -1;
+  background: rgba(146, 242, 255, 0.15);
+}
+hr {
+  width: 330px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hide {
+  display: none;
+}
+@import "./blocks/header.scss";
+@import "./blocks/preview.scss";
