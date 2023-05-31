@@ -109,15 +109,20 @@
 }
 @media (max-width: 576px) {
   .container {
-    width: 100%;
-    margin: 0;
+    min-width: 100%;
   }
   .header {
     padding: 0 10px;
   }
+  .header_logo img {
+    width: 85px;
+  }
+  .header_btn {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
   .preview_tab-content {
-    margin: 0;
-    width: 370px;
+    width: 330px;
   }
   .preview_tab-header_list {
     padding: 0;
@@ -132,5 +137,11 @@
     overflow: scroll;
     bottom: -31%;
     right: 0;
+  }
+  .preview_tab-header-item {
+    font-size: 15px;
+  }
+  .preview_tab-header-item_active {
+    font-size: 18px;
   }
 }
