@@ -24,5 +24,12 @@ hr {
 .hide {
   display: none;
 }
+.show {
+  display: block;
+}
+
+.fade {
+  animation: fadeIn 1s linear;
+}
 @import "./blocks/header.scss";
 @import "./blocks/preview.scss";

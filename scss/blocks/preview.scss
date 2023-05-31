@@ -1,4 +1,6 @@
 .preview {
+  animation: zoomInRight;
+  animation-duration: 2s;
   padding: 28px 0 120px 0;
   &_tab-content {
     display: flex;
@@ -20,6 +22,7 @@
       left: 480px;
       width: 550px;
       padding: 40px;
+      animation: lightSpeedInLeft 2s;
       background: rgba(251, 254, 93, 0.8);
       p {
         font-weight: 300;
@@ -66,6 +69,7 @@
           line-height: 26px;
 
           color: #000000;
+          animation: flip 1s;
         }
       }
     }

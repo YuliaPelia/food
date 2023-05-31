@@ -1,4 +1,8 @@
 .preview {
+  -webkit-animation: zoomInRight;
+          animation: zoomInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   padding: 28px 0 120px 0;
 }
 .preview_tab-content {
@@ -24,6 +28,8 @@
   left: 480px;
   width: 550px;
   padding: 40px;
+  -webkit-animation: lightSpeedInLeft 2s;
+          animation: lightSpeedInLeft 2s;
   background: rgba(251, 254, 93, 0.8);
 }
 .preview_tab-descr p {
@@ -80,6 +86,8 @@
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  -webkit-animation: flip 1s;
+          animation: flip 1s;
 }
 .preview h3 {
   margin-top: 35px;
