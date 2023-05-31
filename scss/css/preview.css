@@ -3,12 +3,13 @@
           animation: zoomInRight;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  padding: 28px 0 120px 0;
+  padding: 28px 0 0 0;
 }
 .preview_tab-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1140px;
   background: rgba(255, 255, 255, 0.002);
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -24,8 +25,8 @@
 }
 .preview_tab-descr {
   position: absolute;
-  bottom: -120px;
-  left: 480px;
+  bottom: -25%;
+  right: -25%;
   width: 550px;
   padding: 40px;
   -webkit-animation: lightSpeedInLeft 2s;
@@ -33,6 +34,7 @@
   background: rgba(251, 254, 93, 0.8);
 }
 .preview_tab-descr p {
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 36px;
@@ -43,7 +45,7 @@
   color: rgba(0, 0, 0, 0.7);
 }
 .preview_tab-header {
-  width: 280px;
+  width: 290px;
   padding: 35px 30px;
   background-color: #fff;
 }
@@ -90,12 +92,12 @@
           animation: flip 1s;
 }
 .preview h3 {
-  margin-top: 35px;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 35px;
   color: #000000;
 }/*# sourceMappingURL=preview.css.map */

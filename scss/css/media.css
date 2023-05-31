@@ -1,0 +1,135 @@
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    min-width: 960px;
+  }
+  .header {
+    padding: 0 40px;
+  }
+  .header_left-block {
+    gap: 60px;
+  }
+  .preview h3 {
+    padding: 20px;
+  }
+  .preview_tab {
+    width: 600px;
+  }
+  .preview_tab-content {
+    width: 890px;
+  }
+  .preview_tab-descr {
+    bottom: -35%;
+    right: -35%;
+    padding: 25px;
+    width: 600px;
+  }
+  .preview_tab-header h3 {
+    margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    min-width: 720px;
+  }
+  .header_btn {
+    padding: 15px 25px;
+  }
+  .header_nav a {
+    font-size: 11px;
+  }
+  .preview_tab-content {
+    width: 710px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 75px;
+    background-color: #fff;
+  }
+  .preview_tab-header {
+    width: 100%;
+  }
+  .preview_tab-header_list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
+    padding: 20px;
+    border-left: none;
+    border-bottom: 1px solid #000000;
+  }
+  .preview_tab {
+    margin: 0 auto;
+  }
+  .preview_tab-descr {
+    bottom: -30%;
+    right: -9%;
+  }
+  hr {
+    margin-top: 50px;
+  }
+  .preview_tab-header {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    min-width: 540px;
+  }
+  .header_nav {
+    display: none;
+  }
+  .preview_tab-content {
+    width: 530px;
+  }
+  .preview_tab {
+    width: 100%;
+  }
+  .preview_tab-descr {
+    width: 470px;
+    right: -2px;
+    padding: 20px;
+  }
+  .preview_tab-descr p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    padding: 0 10px;
+  }
+  .preview_tab-content {
+    width: 370px;
+  }
+  .preview_tab-header_list {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  .preview_tab-header {
+    padding: 30px 10px;
+  }
+  .preview_tab-descr {
+    width: 290px;
+    height: 150px;
+    overflow: scroll;
+    bottom: -31%;
+    right: 0;
+  }
+}/*# sourceMappingURL=media.css.map */
