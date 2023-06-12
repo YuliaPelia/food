@@ -1,35 +1,6 @@
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-.bg_blue {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50vw;
-  height: 130vh;
-  z-index: -1;
-  background: rgba(146, 242, 255, 0.15);
-}
-hr {
-  width: 330px;
-  height: 1px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 120px;
-}
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
-
-.fade {
-  animation: fadeIn 1s linear;
-}
+@import "./variable/variable.scss";
 @import "./blocks/header.scss";
 @import "./blocks/preview.scss";
+@import "./blocks/offer.scss";
 
 @import "./blocks/media.scss";

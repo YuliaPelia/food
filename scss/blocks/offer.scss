@@ -1,0 +1,92 @@
+.offer {
+  position: relative;
+  padding: 70px 0 55px 0;
+  &_btn {
+    background: #303030;
+    color: #ffffff;
+  }
+  &_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      max-width: 630px;
+    }
+  }
+  &_title {
+    margin: 0;
+  }
+  &_descr {
+    margin: 30px 0 0 0;
+  }
+  &__advantages {
+    max-width: 330px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: backInLeft 2s;
+
+    h3 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+
+      color: #000000;
+    }
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #000000;
+    }
+  }
+  &__slider {
+    max-width: 650px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    animation: backInRight 2s;
+    &-counter {
+      display: flex;
+      width: 180px;
+      align-items: center;
+      font-size: 24px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    #current {
+      font-size: 48px;
+      font-weight: 700;
+      color: #000;
+    }
+    &-prev {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    &-next {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    &-wrapper {
+      width: 100%;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: backInUp 2s;
+  }
+  hr {
+    margin-top: 40px;
+  }
+}

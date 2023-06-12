@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg_blue {
+  position: absolute;
+  right: 0;
+  top: -120px;
+  width: 50vw;
+  height: 110%;
+  z-index: -1;
+  background: rgba(146, 242, 255, 0.15);
+}
+hr {
+  width: 40%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.fade {
+  animation: fadeIn 1s linear;
+}
+
+.btn {
+  width: 220px;
+  height: 65px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  animation: pulse 2s 10s infinite;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    // box-shadow: 0 4px 15px #fbfe5d;
+    animation: hover_btn 1s linear forwards;
+  }
+}
+.title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.descr {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.bg_yellow {
+  top: 50px;
+  position: absolute;
+  width: 80vw;
+  height: 92%;
+  z-index: -1;
+  background: rgba(243, 255, 222, 0.45);
+}

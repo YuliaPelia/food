@@ -1,7 +1,8 @@
 .preview {
   animation: zoomInRight;
   animation-duration: 2s;
-  padding: 28px 0 0 0;
+  padding: 28px 0 65px 0;
+  position: relative;
   &_tab-content {
     display: flex;
     width: 1140px;
@@ -83,5 +84,8 @@
     align-items: center;
     padding: 35px;
     color: #000000;
+  }
+  hr {
+    margin-top: 95px;
   }
 }

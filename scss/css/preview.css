@@ -3,7 +3,8 @@
           animation: zoomInRight;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  padding: 28px 0 0 0;
+  padding: 28px 0 65px 0;
+  position: relative;
 }
 .preview_tab-content {
   display: -webkit-box;
@@ -100,4 +101,7 @@
           align-items: center;
   padding: 35px;
   color: #000000;
+}
+.preview hr {
+  margin-top: 95px;
 }/*# sourceMappingURL=preview.css.map */
