@@ -312,6 +312,9 @@ hr {
 .offer_block-left {
   max-width: 630px;
 }
+.offer__slide {
+  max-width: 650px;
+}
 .offer_title {
   margin: 0;
 }
@@ -387,12 +390,21 @@ hr {
   cursor: pointer;
 }
 .offer__slider-wrapper {
-  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 .offer__slider-wrapper img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.offer__slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .offer .container {
   display: -webkit-box;
