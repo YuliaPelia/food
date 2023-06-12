@@ -314,6 +314,7 @@ hr {
 }
 .offer__slide {
   max-width: 650px;
+  max-height: 375px;
 }
 .offer_title {
   margin: 0;

@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Slider
+  // Slider;
   const slides = document.querySelectorAll(".offer__slide");
   const prev = document.querySelector(".offer__slider-prev");
   const next = document.querySelector(".offer__slider-next");
@@ -88,17 +88,17 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     slidesField.style.transform = `translateX(-${offset}px)`;
 
-    if (slideIndex == 1) {
-      slideIndex = slides.length;
-    } else {
-      slideIndex--;
-    }
+    //   if (slideIndex == 1) {
+    //     slideIndex = slides.length;
+    //   } else {
+    //     slideIndex--;
+    //   }
 
-    if (slides.length < 10) {
-      current.textContent = `0${slideIndex}`;
-    } else {
-      current.textContent = slideIndex;
-    }
+    //   if (slides.length < 10) {
+    //     current.textContent = `0${slideIndex}`;
+    //   } else {
+    //     current.textContent = slideIndex;
+    //   }
   });
 });
 
