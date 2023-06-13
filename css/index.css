@@ -313,8 +313,8 @@ hr {
   max-width: 630px;
 }
 .offer__slide {
-  max-width: 650px;
-  max-height: 375px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .offer_title {
   margin: 0;
@@ -391,7 +391,7 @@ hr {
   cursor: pointer;
 }
 .offer__slider-wrapper {
-  max-width: 100%;
+  width: 650px;
   overflow: hidden;
 }
 .offer__slider-wrapper img {
@@ -548,6 +548,9 @@ hr {
     font-size: 18px;
     line-height: 25px;
   }
+  .offer__slider-wrapper {
+    max-width: 350px;
+  }
   .offer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -644,5 +647,8 @@ hr {
   }
   .bg_blue {
     height: 120%;
+  }
+  .offer__slider-wrapper {
+    max-width: 320px;
   }
 }/*# sourceMappingURL=index.css.map */

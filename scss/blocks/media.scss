@@ -122,6 +122,9 @@
       line-height: 25px;
     }
   }
+  .offer__slider-wrapper {
+    max-width: 350px;
+  }
   .offer .container {
     display: flex;
     flex-direction: column;
@@ -213,5 +216,8 @@
   }
   .bg_blue {
     height: 120%;
+  }
+  .offer__slider-wrapper {
+    max-width: 320px;
   }
 }
