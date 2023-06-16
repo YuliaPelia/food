@@ -808,7 +808,7 @@ ul {
     gap: 30px;
   }
   .offer_block-left {
-    max-width: 95%;
+    max-width: 80%;
   }
   .calculator_choose ul {
     -ms-flex-wrap: wrap;
