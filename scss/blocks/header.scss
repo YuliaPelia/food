@@ -19,12 +19,20 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 21px;
-      color: #303030;
+      color: #000000;
       &::before {
         content: "";
         width: 110%;
         display: block;
-        background: #54ed39;
+        // background: #54ed39;
+        background-image: linear-gradient(
+          to top,
+          #e94f4f,
+          #fd7a43,
+          #ffa63b,
+          #ffd241,
+          #fbfe5d
+        );
         height: 8px;
         position: absolute;
         left: -5px;
@@ -38,7 +46,15 @@
   }
   &_btn {
     color: #000000;
-    background: #ffffff;
+    // background: #ffffff;
+    background-image: linear-gradient(
+      to top,
+      #92f2ff,
+      #76fded,
+      #87ffc5,
+      #baff90,
+      #fbfe5d
+    );
     border: 1px solid rgba(0, 0, 0, 0.2);
   }
 }

@@ -32,13 +32,14 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: #303030;
+  color: #000000;
 }
 .header_nav a::before {
   content: "";
   width: 110%;
   display: block;
-  background: #54ed39;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e94f4f), color-stop(#fd7a43), color-stop(#ffa63b), color-stop(#ffd241), to(#fbfe5d));
+  background-image: linear-gradient(to top, #e94f4f, #fd7a43, #ffa63b, #ffd241, #fbfe5d);
   height: 8px;
   position: absolute;
   left: -5px;
@@ -51,7 +52,8 @@
 }
 .header_btn {
   color: #000000;
-  background: #ffffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#92f2ff), color-stop(#76fded), color-stop(#87ffc5), color-stop(#baff90), to(#fbfe5d));
+  background-image: linear-gradient(to top, #92f2ff, #76fded, #87ffc5, #baff90, #fbfe5d);
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 

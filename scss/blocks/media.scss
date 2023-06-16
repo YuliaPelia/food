@@ -56,7 +56,7 @@
     background-color: #fff;
   }
   .preview_tab-header {
-    width: 100%;
+    width: 89%;
   }
   .preview_tab-header_list {
     align-items: center;
@@ -97,6 +97,9 @@
   .offer__slider {
     margin: 0 auto;
   }
+  .calculator_list button {
+    width: 160px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -133,6 +136,14 @@
   }
   .offer_block-left {
     max-width: 95%;
+  }
+
+  .calculator_choose ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .calculator_list button {
+    width: 200px;
   }
 }
 @media (max-width: 576px) {

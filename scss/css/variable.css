@@ -1,7 +1,9 @@
-* {
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fefefe), color-stop(#fff1ff), color-stop(#ffe0e1), color-stop(#ffe395), to(#fbfe5d));
+  background-image: linear-gradient(to top, #fefefe, #fff1ff, #ffe0e1, #ffe395, #fbfe5d);
 }
 
 .bg_blue {
@@ -11,13 +13,21 @@
   width: 50vw;
   height: 110%;
   z-index: -1;
-  background: rgba(146, 242, 255, 0.15);
+  background: rgba(146, 242, 255, 0.5);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 hr {
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 .hide {
@@ -45,6 +55,8 @@ hr {
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
 }
 .btn:hover {
   -webkit-animation: hover_btn 1s linear forwards;
@@ -55,14 +67,22 @@ hr {
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
-  color: #000000;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(212, 61, 61)), to(rgb(251, 254, 93)));
+  background-image: linear-gradient(0deg, rgb(212, 61, 61) 0%, rgb(251, 254, 93) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .descr {
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e94f4f), color-stop(#cf6a2a), color-stop(#ac7f16), color-stop(#868d27), to(#5f9548));
+  background-image: linear-gradient(to right, #e94f4f, #cf6a2a, #ac7f16, #868d27, #5f9548);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .bg_yellow {
@@ -71,5 +91,19 @@ hr {
   width: 80vw;
   height: 92%;
   z-index: -1;
-  background: rgba(243, 255, 222, 0.45);
+  background: rgba(243, 255, 222, 0.7);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#e04646), color-stop(#9b451d), color-stop(#5d390c), color-stop(#2e250b), to(#0a0a08));
+  background-image: linear-gradient(to left top, #e04646, #9b451d, #5d390c, #2e250b, #0a0a08);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }/*# sourceMappingURL=variable.css.map */

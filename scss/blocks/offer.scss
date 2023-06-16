@@ -2,7 +2,12 @@
   position: relative;
   padding: 70px 0 55px 0;
   &_btn {
-    background: #303030;
+    background: rgb(251, 254, 93);
+    background: linear-gradient(
+      0deg,
+      rgba(251, 254, 93, 1) 0%,
+      rgba(233, 79, 79, 1) 100%
+    );
     color: #ffffff;
   }
   &_block {
@@ -38,14 +43,36 @@
       font-size: 20px;
       line-height: 23px;
 
-      color: #000000;
+      // color: #000000;
+      background-image: linear-gradient(
+        to right,
+        #5f9548,
+        #848b24,
+        #a77b0f,
+        #c86422,
+        #e04646
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
     p {
       font-weight: 300;
       font-size: 18px;
       line-height: 21px;
 
-      color: #000000;
+      // color: #000000;
+      background-image: linear-gradient(
+        to right,
+        #5f9548,
+        #848b24,
+        #a77b0f,
+        #c86422,
+        #e04646
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
   &__slider {
@@ -61,12 +88,22 @@
       width: 180px;
       align-items: center;
       font-size: 24px;
-      color: rgba(0, 0, 0, 0.5);
+      // color: rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(
+        to right,
+        #5f9548,
+        #848b24,
+        #a77b0f,
+        #c86422,
+        #e04646
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
     #current {
       font-size: 48px;
       font-weight: 700;
-      color: #000;
     }
     &-prev {
       margin-right: 10px;

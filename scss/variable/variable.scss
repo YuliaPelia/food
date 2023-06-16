@@ -1,8 +1,15 @@
-* {
+body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #fefefe,
+    #fff1ff,
+    #ffe0e1,
+    #ffe395,
+    #fbfe5d
+  );
 }
-
 .bg_blue {
   position: absolute;
   right: 0;
@@ -10,12 +17,18 @@
   width: 50vw;
   height: 110%;
   z-index: -1;
-  background: rgba(146, 242, 255, 0.15);
+  background: rgba(146, 242, 255, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 hr {
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+ul {
+  list-style: none;
+  padding: 0;
 }
 .hide {
   display: none;
@@ -37,6 +50,8 @@ hr {
   animation: pulse 2s 10s infinite;
   cursor: pointer;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
 
   &:hover {
     // box-shadow: 0 4px 15px #fbfe5d;
@@ -47,14 +62,30 @@ hr {
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
-  color: #000000;
+  background-image: linear-gradient(
+    0deg,
+    rgba(212, 61, 61, 1) 0%,
+    rgba(251, 254, 93, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .descr {
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  background-image: linear-gradient(
+    to right,
+    #e94f4f,
+    #cf6a2a,
+    #ac7f16,
+    #868d27,
+    #5f9548
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .bg_yellow {
@@ -63,5 +94,26 @@ hr {
   width: 80vw;
   height: 92%;
   z-index: -1;
-  background: rgba(243, 255, 222, 0.45);
+  background: rgba(243, 255, 222, 0.7);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: center;
+
+  background-image: linear-gradient(
+    to left top,
+    #e04646,
+    #9b451d,
+    #5d390c,
+    #2e250b,
+    #0a0a08
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

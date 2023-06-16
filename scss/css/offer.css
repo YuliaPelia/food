@@ -3,7 +3,9 @@
   padding: 70px 0 55px 0;
 }
 .offer_btn {
-  background: #303030;
+  background: rgb(251, 254, 93);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(251, 254, 93)), to(rgb(233, 79, 79)));
+  background: linear-gradient(0deg, rgb(251, 254, 93) 0%, rgb(233, 79, 79) 100%);
   color: #ffffff;
 }
 .offer_block {
@@ -49,13 +51,21 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  color: #000000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5f9548), color-stop(#848b24), color-stop(#a77b0f), color-stop(#c86422), to(#e04646));
+  background-image: linear-gradient(to right, #5f9548, #848b24, #a77b0f, #c86422, #e04646);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .offer__advantages p {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5f9548), color-stop(#848b24), color-stop(#a77b0f), color-stop(#c86422), to(#e04646));
+  background-image: linear-gradient(to right, #5f9548, #848b24, #a77b0f, #c86422, #e04646);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .offer__slider {
   max-width: 650px;
@@ -83,12 +93,15 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  background-image: -webkit-gradient(linear, left top, right top, from(#5f9548), color-stop(#848b24), color-stop(#a77b0f), color-stop(#c86422), to(#e04646));
+  background-image: linear-gradient(to right, #5f9548, #848b24, #a77b0f, #c86422, #e04646);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .offer__slider #current {
   font-size: 48px;
   font-weight: 700;
-  color: #000;
 }
 .offer__slider-prev {
   margin-right: 10px;
