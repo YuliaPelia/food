@@ -861,10 +861,14 @@ ul {
     margin-top: 10px;
   }
   .offer__slider-counter {
-    margin: 0 auto;
+    margin: 0;
+    width: auto;
   }
   .offer__slider {
+    margin: 0;
     margin-top: 20px;
+    -ms-flex-item-align: end;
+        align-self: end;
   }
   .offer_btn {
     display: none;
