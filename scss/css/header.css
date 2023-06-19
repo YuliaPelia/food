@@ -1,0 +1,110 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 115px;
+  padding: 0 100px;
+}
+.header_left-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 115px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+}
+.header_nav a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.header_nav a::before {
+  content: "";
+  width: 110%;
+  display: block;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e94f4f), color-stop(#fd7a43), color-stop(#ffa63b), color-stop(#ffd241), to(#fbfe5d));
+  background-image: linear-gradient(to top, #e94f4f, #fd7a43, #ffa63b, #ffd241, #fbfe5d);
+  height: 8px;
+  position: absolute;
+  left: -5px;
+  bottom: 1px;
+  z-index: -1;
+}
+.header_nav a:hover {
+  -webkit-animation: hover_link 0.7s linear forwards;
+          animation: hover_link 0.7s linear forwards;
+}
+.header_btn {
+  color: #000000;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#92f2ff), color-stop(#76fded), color-stop(#87ffc5), color-stop(#baff90), to(#fbfe5d));
+  background-image: linear-gradient(to top, #92f2ff, #76fded, #87ffc5, #baff90, #fbfe5d);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes hover_link {
+  0% {
+    color: #303030;
+  }
+  50% {
+    color: #fbfe5d;
+  }
+  100% {
+    color: #d43d3d;
+  }
+}
+
+@keyframes hover_link {
+  0% {
+    color: #303030;
+  }
+  50% {
+    color: #fbfe5d;
+  }
+  100% {
+    color: #d43d3d;
+  }
+}
+@-webkit-keyframes hover_btn {
+  0% {
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0px 4px 15px #fbfe5d;
+            box-shadow: 0px 4px 15px #fbfe5d;
+  }
+  100% {
+    -webkit-box-shadow: 0px 4px 15px #92f2ff;
+            box-shadow: 0px 4px 15px #92f2ff;
+  }
+}
+@keyframes hover_btn {
+  0% {
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0px 4px 15px #fbfe5d;
+            box-shadow: 0px 4px 15px #fbfe5d;
+  }
+  100% {
+    -webkit-box-shadow: 0px 4px 15px #92f2ff;
+            box-shadow: 0px 4px 15px #92f2ff;
+  }
+}/*# sourceMappingURL=header.css.map */

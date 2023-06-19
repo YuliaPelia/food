@@ -1,57 +1,22 @@
-window.addEventListener("DOMContentLoaded", () => {
-  // tabs
-  const tabs = document.querySelectorAll(".preview_tab-header-item");
-  const content = document.querySelectorAll(".preview_tab");
-  const parent = document.querySelector(".preview_tab-content");
-  // приховуєм таби
-  const hideTabContent = () => {
-    content.forEach((item) => {
-      item.classList.add("hide");
-      item.classList.remove("show");
-    });
-
-    tabs.forEach((tab) => {
-      tab.classList.remove("preview_tab-header-item_active");
-    });
-  };
-
-  // i - num show
-  const showTabContent = (i = 0) => {
-    content[i].classList.add("show");
-    content[i].classList.add("fade");
-    content[i].classList.remove("hide");
-
-    tabs[i].classList.add("preview_tab-header-item_active");
-  };
-
-  hideTabContent();
-  showTabContent();
-
-  parent.addEventListener("click", (e) => {
-    const target = e.target;
-
-    if (target && target.classList.contains("preview_tab-header-item")) {
-      tabs.forEach((item, i) => {
-        if (target == item) {
-          hideTabContent();
-          showTabContent(i);
-        }
-      });
-    }
-  });
-
-  // Slider
-
+const slider = (
+  slides,
+  prev,
+  next,
+  total,
+  current,
+  slidesWrapper,
+  slidesField
+) => {
   let offset = 0;
   let slideIndex = 1;
 
-  const slides = document.querySelectorAll(".offer__slide");
-  const prev = document.querySelector(".offer__slider-prev");
-  const next = document.querySelector(".offer__slider-next");
-  const total = document.querySelector("#total");
-  const current = document.querySelector("#current");
-  const slidesWrapper = document.querySelector(".offer__slider-wrapper");
-  const slidesField = document.querySelector(".offer__slider-inner");
+  //   const slides = document.querySelectorAll(".offer__slide");
+  //   const prev = document.querySelector(".offer__slider-prev");
+  //   const next = document.querySelector(".offer__slider-next");
+  //   const total = document.querySelector("#total");
+  //   const current = document.querySelector("#current");
+  //   const slidesWrapper = document.querySelector(".offer__slider-wrapper");
+  //   const slidesField = document.querySelector(".offer__slider-inner");
   const width = window.getComputedStyle(slidesWrapper).width;
   const indicators = document.createElement("ol");
   const dots = [];
@@ -202,77 +167,6 @@ window.addEventListener("DOMContentLoaded", () => {
     updateSlideIndexText();
     updateDotOpacity();
   }
+};
 
-  // calculator
-  const result = document.querySelector(".calculator_kall span");
-  let sex = "female",
-    height,
-    weight,
-    age,
-    ratio = 1.375;
-
-  const calcTotal = () => {
-    if (!sex || !height || !weight || !age || !ratio) {
-      result.textContent = "____";
-      return;
-    }
-
-    if (sex === "female") {
-      result.textContent = Math.round(
-        (447.6 + 9.2 * weight + 3.1 * height - 4.3 * age) * ratio
-      );
-    } else {
-      result.textContent = Math.round(
-        (447.6 + 9.2 * weight + 3.1 * height - 4.3 * age) * ratio
-      );
-    }
-  };
-
-  calcTotal();
-
-  const getStaticInfo = (parentSelector, activeClass) => {
-    const elements = document.querySelectorAll(`${parentSelector} button`);
-    elements.forEach((elem) => {
-      elem.addEventListener("click", (e) => {
-        if (e.target.getAttribute("data-ratio")) {
-          ratio = e.target.getAttribute("data-ratio");
-        } else {
-          sex = e.target.getAttribute("id");
-        }
-
-        elements.forEach((elem) => {
-          elem.classList.remove(activeClass);
-        });
-
-        e.target.classList.add(activeClass);
-        calcTotal();
-      });
-    });
-  };
-
-  getStaticInfo("#gender", "calculator_btn-active");
-  getStaticInfo(".calculator_change", "calculator_btn-active");
-
-  const getDynamicInfo = (selector) => {
-    const input = document.querySelector(selector);
-
-    input.addEventListener("input", () => {
-      switch (input.getAttribute("id")) {
-        case "height":
-          height = +input.value;
-          break;
-        case "weight":
-          weight = +input.value;
-        case "age":
-          age = +input.value;
-          break;
-      }
-      calcTotal();
-    });
-  };
-  getDynamicInfo("#height");
-  getDynamicInfo("#weight");
-  getDynamicInfo("#age");
-});
-
-new WOW().init();
+export default slider;

@@ -174,38 +174,69 @@
                 <h3 class="subtitle calculator_subtitle">Ваша стать</h3>
 
                 <div class="calculator_box" id="gender">
-                  <button class="calculator_btn calculator_btn-active">
+                  <button
+                    id="female"
+                    class="calculator_btn calculator_btn-active"
+                  >
                     Жіноча
                   </button>
-                  <button class="calculator_btn">Чоловіча</button>
+                  <button id="male" class="calculator_btn">Чоловіча</button>
                 </div>
               </li>
               <li class="calculator_choose">
                 <h3 class="subtitle calculator_subtitle">Ваша конституція</h3>
                 <ul>
-                  <li><input type="text" placeholder="Введіть ріст" /></li>
-                  <li><input type="text" placeholder="Введіть вагу" /></li>
-                  <li><input type="text" placeholder="Введіть вік" /></li>
+                  <li>
+                    <input
+                      id="height"
+                      type="number"
+                      placeholder="Введіть ріст"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      id="weight"
+                      type="number"
+                      placeholder="Введіть вагу"
+                    />
+                  </li>
+                  <li>
+                    <input id="age" type="number" placeholder="Введіть вік" />
+                  </li>
                 </ul>
               </li>
-              <li class="calculator_choose">
+              <li class="calculator_choose calculator_change">
                 <h3 class="subtitle calculator_subtitle">
                   Виберіть вашу фізичну активність
                 </h3>
                 <ul class="calculator_list">
                   <li>
-                    <button class="calculator_btn">Низька активність</button>
+                    <button data-ratio="1.2" id="low" class="calculator_btn">
+                      Низька активність
+                    </button>
                   </li>
                   <li>
-                    <button class="calculator_btn calculator_btn-active">
+                    <button
+                      data-ratio="1.375"
+                      id="small"
+                      class="calculator_btn calculator_btn-active"
+                    >
                       Невисока активність
                     </button>
                   </li>
                   <li>
-                    <button class="calculator_btn">Помірна активність</button>
+                    <button
+                      data-ratio="1.55"
+                      id="medium"
+                      class="calculator_btn"
+                    >
+                      Помірна активність
+                    </button>
                   </li>
                   <li>
-                    <button class="calculator_btn">Висока активність</button>
+                    <button data-ratio="1.725" id="high" class="calculator_btn">
+                      Висока активність
+                    </button>
                   </li>
                 </ul>
               </li>
@@ -213,7 +244,7 @@
             <hr />
             <div class="calculator_total">
               <h3 class="subtitle">Ваша добова норма калорій:</h3>
-              <p class="calculator_kall">2700 <span>ккал</span></p>
+              <p class="calculator_kall"><span>2700</span>ккал</p>
             </div>
           </div>
         </div>

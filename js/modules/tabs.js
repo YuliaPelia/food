@@ -1,8 +1,8 @@
-const tabs = () => {
+export function initTabs() {
   const tabs = document.querySelectorAll(".preview_tab-header-item");
   const content = document.querySelectorAll(".preview_tab");
   const parent = document.querySelector(".preview_tab-content");
-  // приховуєм таби
+
   const hideTabContent = () => {
     content.forEach((item) => {
       item.classList.add("hide");
@@ -14,7 +14,6 @@ const tabs = () => {
     });
   };
 
-  // i - num show
   const showTabContent = (i = 0) => {
     content[i].classList.add("show");
     content[i].classList.add("fade");
@@ -38,6 +37,4 @@ const tabs = () => {
       });
     }
   });
-};
-
-export default tabs;
+}
