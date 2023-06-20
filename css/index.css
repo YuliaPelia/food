@@ -764,7 +764,11 @@ ul {
     display: none;
   }
   .offer__slider {
-    margin: 0 auto;
+    margin: 0;
+    max-width: 100%;
+  }
+  .offer__slider-wrapper {
+    max-width: 100%;
   }
   .calculator_list button {
     width: 160px;
@@ -791,9 +795,6 @@ ul {
   .preview_tab-descr p {
     font-size: 18px;
     line-height: 25px;
-  }
-  .offer__slider-wrapper {
-    max-width: 350px;
   }
   .offer .container {
     display: -webkit-box;
@@ -903,9 +904,6 @@ ul {
   }
   .bg_blue {
     height: 120%;
-  }
-  .offer__slider-wrapper {
-    max-width: 320px;
   }
   .calculator_total {
     gap: 20px;
