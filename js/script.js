@@ -203,6 +203,9 @@ window.addEventListener("DOMContentLoaded", () => {
     updateDotOpacity();
   }
 
+  const element = document.querySelector(".offer__slider");
+  element.scrollIntoView({ behavior: "smooth" });
+
   // calculator
   const result = document.querySelector(".calculator_kall span");
   let sex = "female",
