@@ -123,6 +123,9 @@
   }
 
   hr {
-    margin-top: 95px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

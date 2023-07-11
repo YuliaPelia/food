@@ -174,10 +174,10 @@
     padding: 30px 10px;
   }
   .preview_tab-descr {
-    width: 290px;
-    height: 150px;
+    width: 210px;
+    height: 100px;
     overflow: scroll;
-    bottom: -31%;
+    bottom: -40%;
     right: 0;
   }
   .preview_tab-header-item {
@@ -187,9 +187,6 @@
     font-size: 18px;
   }
 
-  .title {
-    font-size: 20px;
-  }
   .offer_descr {
     margin-top: 10px;
   }
@@ -247,5 +244,9 @@
   }
   .calculator_title {
     font-size: 20px;
+  }
+  .offer_title {
+    font-size: 22px;
+    line-height: 25px;
   }
 }

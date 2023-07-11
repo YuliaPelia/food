@@ -203,17 +203,22 @@ window.addEventListener("DOMContentLoaded", () => {
     updateDotOpacity();
   }
 
-  const element = document.querySelector(".offer__slider");
-  element.scrollIntoView({ behavior: "smooth" });
-
   // calculator
   const result = document.querySelector(".calculator_kall span");
-  let sex = "female",
-    height,
-    weight,
-    age,
-    ratio = 1.375;
 
+  let sex, height, weight, age, ratio;
+  if (localStorage.getItem("sex")) {
+    sex = localStorage.getItem("sex");
+  } else {
+    sex = "female";
+    localStorage.setItem("sex", "female");
+  }
+  if (localStorage.getItem("ratio")) {
+    ratio = localStorage.getItem("ratio");
+  } else {
+    ratio = "fema";
+    localStorage.setItem("sex", "female");
+  }
   const calcTotal = () => {
     if (!sex || !height || !weight || !age || !ratio) {
       result.textContent = "____";
@@ -238,9 +243,11 @@ window.addEventListener("DOMContentLoaded", () => {
     elements.forEach((elem) => {
       elem.addEventListener("click", (e) => {
         if (e.target.getAttribute("data-ratio")) {
-          ratio = e.target.getAttribute("data-ratio");
+          ratio = +e.target.getAttribute("data-ratio");
+          localStorage.setItem("ratio", +e.target.getAttribute("data-ratio"));
         } else {
           sex = e.target.getAttribute("id");
+          localStorage.setItem("sex", e.target.getAttribute("id"));
         }
 
         elements.forEach((elem) => {

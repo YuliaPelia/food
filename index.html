@@ -251,6 +251,57 @@
       </section>
     </main>
 
+    <div class="modal">
+      <div class="modal_content">
+        <div data-close class="modal__close">&times;</div>
+        <h2 class="modal_title title">
+          Залиште свої дані, ми вам передзвонимо
+        </h2>
+        <form class="modal_form" action="#">
+          <div class="modal_data">
+            <label for="name">Ім'я</label>
+            <div class="modal_wrapper">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="name" required />
+            </div>
+          </div>
+          <div class="modal_data">
+            <label for="number">Телефон</label>
+            <div class="modal_wrapper">
+              <i class="fa-solid fa-phone"></i>
+              <input type="text" id="number" required />
+            </div>
+          </div>
+          <div class="modal_data">
+            <label for="email">Пошта</label>
+            <div class="modal_wrapper">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" id="email" required />
+            </div>
+          </div>
+          <div class="modal_data textarea">
+            <textarea
+              name="comment"
+              type="text"
+              placeholder="Введіть текст"
+              class="comment"
+            ></textarea>
+          </div>
+          <div class="modal_policy">
+            <input id="checkbox" required type="checkbox" />
+            <label for="checkbox"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a></label
+            >
+          </div>
+        </form>
+        <button class="modal_btn btn">Відправити</button>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9a78771608.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/wow.js"></script>
     <script src="./js/script.js"></script>
   </body>
