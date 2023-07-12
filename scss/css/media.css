@@ -153,6 +153,9 @@
   .calculator_list button {
     width: 200px;
   }
+  .modal_content {
+    width: 70%;
+  }
 }
 @media (max-width: 576px) {
   .container {
