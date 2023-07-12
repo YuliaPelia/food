@@ -7,6 +7,7 @@
   width: 100%;
   height: 100%;
   display: none;
+  transition: 0.5s;
 }
 .modal_content {
   position: relative;
@@ -153,4 +154,8 @@
   align-items: center;
   gap: 5px;
   margin: 10px auto 0;
+}
+.show {
+  display: block;
+  //   animation: fadeInBottomLeft;
 }
