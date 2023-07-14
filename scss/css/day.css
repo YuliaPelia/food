@@ -1,0 +1,104 @@
+.day {
+  padding-bottom: 90px;
+  position: relative;
+}
+.day_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.day_title {
+  text-align: center;
+}
+.day_form {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.day_form input {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.day_form-button {
+  background: rgb(224, 70, 70);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(224, 70, 70)), color-stop(74%, rgb(95, 149, 72)), to(rgb(251, 254, 93)));
+  background: linear-gradient(90deg, rgb(224, 70, 70) 0%, rgb(95, 149, 72) 74%, rgb(251, 254, 93) 100%);
+  color: #fff;
+}
+.day hr {
+  margin-top: 120px;
+}
+.day_bg {
+  top: 230px;
+  width: 51vw;
+  height: 65%;
+}
+.day_descr {
+  width: 570px;
+}
+.day_descr span {
+  font-size: 26px;
+  font-weight: 700;
+}
+.day_timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+.day_timer-block {
+  width: 105px;
+  height: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 23px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.day_timer-block span {
+  font-size: 16px;
+  font-weight: 300;
+}/*# sourceMappingURL=day.css.map */
