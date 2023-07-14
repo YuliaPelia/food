@@ -228,10 +228,6 @@ ul {
   }
 }
 .preview {
-  -webkit-animation: zoomInRight;
-          animation: zoomInRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
   padding: 28px 0 65px 0;
   position: relative;
 }
@@ -244,6 +240,10 @@ ul {
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
+  -webkit-animation: zoomInRight;
+          animation: zoomInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .preview h3 {
   font-weight: 700;
