@@ -106,6 +106,32 @@
   .calculator_list button {
     width: 160px;
   }
+  .menu_cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .day_form input {
+    width: 190px;
+  }
+  .day_wrapper-title {
+    text-align: center;
+  }
+  .day_descr {
+    width: 350px;
+  }
+  .day_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .day_wrapper:nth-child(2) {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -253,5 +279,54 @@
   .offer_title {
     font-size: 22px;
     line-height: 25px;
+  }
+  .day_form {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .day_form img {
+    display: none;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .day_form-button {
+    font-size: 14px;
+  }
+  .day_descr {
+    width: 100%;
+  }
+  .day_timer-block {
+    width: 70px;
+    height: 90px;
+    font-size: 30px;
+  }
+  .day_timer {
+    gap: 10px;
+  }
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .footer_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer_box:last-child {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }/*# sourceMappingURL=media.css.map */
