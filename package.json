@@ -1,5 +1,28 @@
 {
   "dependencies": {
-    "animate.css": "^4.1.1"
-  }
+    "animate.css": "^4.1.1",
+    "bundle-js": "^1.0.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "name": "food_main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuliaPelia/food.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuliaPelia/food/issues"
+  },
+  "homepage": "https://github.com/YuliaPelia/food#readme",
+  "description": ""
 }
