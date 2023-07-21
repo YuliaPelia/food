@@ -11,10 +11,19 @@ window.addEventListener("DOMContentLoaded", () => {
     ".preview_tab-content",
     "preview_tab-header-item_active"
   );
-  slider();
-  calculator();
-  modal();
-  timer();
+  slider(
+    ".offer__slide",
+    ".offer__slider-prev",
+    ".offer__slider-next",
+    "#total",
+    "#current",
+    ".offer__slider-wrapper",
+    ".offer__slider-inner",
+    "offer-indicators"
+  );
+  calculator(".calculator_kall span");
+  modal(".modal_btn", ".modal", ".modal .modal__close");
+  timer(".day_timer", "title");
 });
 
 new WOW().init();

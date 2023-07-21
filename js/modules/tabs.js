@@ -5,9 +5,9 @@ const tab = (
   tabsParentSelector,
   activeClass
 ) => {
-  const tabs = document.querySelectorAll(".preview_tab-header-item");
-  const content = document.querySelectorAll(".preview_tab");
-  const parent = document.querySelector(".preview_tab-content");
+  const tabs = document.querySelectorAll(tabsSelector);
+  const content = document.querySelectorAll(tabsContentSelector);
+  const parent = document.querySelector(tabsParentSelector);
   // приховуєм таби
   const hideTabContent = () => {
     content.forEach((item) => {
@@ -16,7 +16,7 @@ const tab = (
     });
 
     tabs.forEach((tab) => {
-      tab.classList.remove("preview_tab-header-item_active");
+      tab.classList.remove(activeClass);
     });
   };
 
@@ -26,7 +26,7 @@ const tab = (
     content[i].classList.add("fade");
     content[i].classList.remove("hide");
 
-    tabs[i].classList.add("preview_tab-header-item_active");
+    tabs[i].classList.add(activeClass);
   };
 
   hideTabContent();

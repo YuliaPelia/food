@@ -1,9 +1,9 @@
-const timer = () => {
-  const deadline = "2022-12-11";
+const timer = (sliderTimmer, sliderTitle) => {
+  const deadline = "2023-12-11";
 
   const getTimeRemaining = (endtime) => {
-    const timer = document.querySelector(".day_timer");
-    const title = document.getElementById("title");
+    const timer = document.querySelector(sliderTimmer);
+    const title = document.getElementById(sliderTitle);
     const t = Date.parse(endtime) - Date.parse(new Date());
 
     const days = Math.floor(t / (1000 * 60 * 60 * 24));

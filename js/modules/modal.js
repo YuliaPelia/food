@@ -1,4 +1,4 @@
-const modal = () => {
+const modal = (btn, modal, close) => {
   let btnPressed = false;
 
   function bindModal(
@@ -111,6 +111,6 @@ const modal = () => {
     });
   }
 
-  bindModal(".modal_btn", ".modal", ".modal .modal__close");
+  bindModal(btn, modal, close);
 };
 export default modal;

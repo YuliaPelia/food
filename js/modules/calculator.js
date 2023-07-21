@@ -1,5 +1,5 @@
-const calculator = () => {
-  const result = document.querySelector(".calculator_kall span");
+const calculator = (calculatorKall) => {
+  const result = document.querySelector(calculatorKall);
 
   let sex, height, weight, age, ratio;
   if (localStorage.getItem("sex")) {
